@@ -7,6 +7,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <NavLinks showHome />
       </div>
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+      <div className="m-5">
+        <a target="_blank" href="https://icons8.com/icon/66763/circled-v">
+          Circled V
+        </a>{" "}
+        icon by{" "}
+        <a target="_blank" href="https://icons8.com">
+          Icons8
+        </a>
+      </div>
     </div>
   );
 };
