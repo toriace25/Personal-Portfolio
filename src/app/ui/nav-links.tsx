@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import Link from "next/link";
 
 interface Props {
@@ -24,7 +25,11 @@ const NavLinks = ({ showHome }: Props) => {
             <Link
               key={link.name}
               href={link.href}
-              className="md:text-md flex grow items-center justify-center gap-2 rounded-md bg-violet-500 p-1.5 text-sm hover:bg-violet-300 hover:text-gray-950 md:p-3 lg:text-lg"
+              className={clsx(
+                !showHome &&
+                  "items-center justify-center gap-2 rounded-md bg-violet-500 p-1.5 hover:bg-violet-300 md:p-3",
+                "md:text-md flex grow text-sm hover:text-gray-950 lg:text-lg",
+              )}
             >
               <p>{link.name}</p>
             </Link>
