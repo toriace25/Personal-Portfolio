@@ -1,3 +1,4 @@
+import SectionHeader from "@/app/ui/(overview)/section-header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const ProjectsPage = () => {
-  return <p>Projects Page</p>;
+  return <SectionHeader title="Projects" />;
 };
 
 export default ProjectsPage;

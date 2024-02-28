@@ -26,9 +26,10 @@ const NavLinks = ({ showHome }: Props) => {
               key={link.name}
               href={link.href}
               className={clsx(
-                !showHome &&
-                  "items-center justify-center gap-2 rounded-md bg-violet-500 p-1.5 hover:bg-violet-300 md:p-3",
-                "md:text-md flex grow text-sm hover:text-gray-950 lg:text-lg",
+                !showHome
+                  ? "items-center justify-center gap-2 rounded-md bg-violet-500 p-1.5 hover:bg-violet-300 hover:text-gray-950 md:p-3"
+                  : "text-gray-950 hover:text-white",
+                "md:text-md flex grow text-sm lg:text-lg",
               )}
             >
               <p>{link.name}</p>
