@@ -11,14 +11,19 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
       </div>
-      <div className="m-5 text-sm">
-        <a target="_blank" href="https://icons8.com/icon/66763/circled-v">
-          Circled V
-        </a>{" "}
-        icon by{" "}
-        <a target="_blank" href="https://icons8.com">
-          Icons8
-        </a>
+      <div className="mb-5 flex flex-col items-center text-sm">
+        <p className="text-sm">
+          Copyright &copy; 2024 | Victoria Scavetta | All Rights Reserved
+        </p>
+        <div>
+          <a target="_blank" href="https://icons8.com/icon/66763/circled-v">
+            Circled V
+          </a>{" "}
+          icon by{" "}
+          <a target="_blank" href="https://icons8.com">
+            Icons8
+          </a>
+        </div>
       </div>
     </div>
   );
