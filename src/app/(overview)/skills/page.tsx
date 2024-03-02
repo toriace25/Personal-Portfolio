@@ -1,3 +1,4 @@
+import Section from "@/app/ui/(overview)/section";
 import SectionHeader from "@/app/ui/(overview)/section-header";
 import SkillSection from "@/app/ui/(overview)/skills/skill-section";
 import { Metadata } from "next";
@@ -8,8 +9,7 @@ export const metadata: Metadata = {
 
 const SkillsPage = () => {
   return (
-    <div className="flex flex-col gap-10 md:gap-20">
-      <SectionHeader title="Skills" />
+    <Section sectionTitle="Skills">
       <div className="flex flex-col gap-8 md:gap-10 lg:gap-16">
         <SkillSection
           sectionTitle="Languages"
@@ -69,7 +69,7 @@ const SkillsPage = () => {
           ]}
         />
       </div>
-    </div>
+    </Section>
   );
 };
 

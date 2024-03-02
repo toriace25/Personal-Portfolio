@@ -11,8 +11,8 @@ const SkillSection = ({ sectionTitle, skillsList }: Props) => {
     <div className="flex flex-col items-center gap-4 md:gap-6">
       <Subheading title={sectionTitle} />
       <div className="flex flex-row flex-wrap justify-center gap-2 md:gap-4 lg:gap-8">
-        {skillsList.map((skill) => (
-          <Badge key={`skill-${skill}`} title={skill} />
+        {skillsList.map((skill, i) => (
+          <Badge key={`${sectionTitle}-skill-${i}`} title={skill} />
         ))}
       </div>
     </div>
