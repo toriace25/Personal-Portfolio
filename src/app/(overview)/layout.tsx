@@ -16,10 +16,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           Copyright &copy; 2024 | Victoria Scavetta | All Rights Reserved
         </p>
         <div>
-          <a target="_blank" href="https://icons8.com/icon/66763/circled-v">
-            Circled V
-          </a>{" "}
-          icon by{" "}
+          Icons by{" "}
           <a target="_blank" href="https://icons8.com">
             Icons8
           </a>

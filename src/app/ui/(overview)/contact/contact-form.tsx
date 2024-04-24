@@ -29,7 +29,7 @@ const ContactForm: FC = () => {
         <input
           type="text"
           placeholder="Full Name"
-          className="w-full rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+          className="w-full rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 outline-none focus:border-violet-500 focus:shadow-md"
           {...register("name", { required: true })}
         />
       </div>
@@ -43,7 +43,7 @@ const ContactForm: FC = () => {
         <input
           type="email"
           placeholder="example@domain.com"
-          className="w-full rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+          className="w-full rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 outline-none focus:border-violet-500 focus:shadow-md"
           {...register("email", { required: true })}
         />
       </div>
@@ -57,12 +57,12 @@ const ContactForm: FC = () => {
         <textarea
           rows={4}
           placeholder="Type your message"
-          className="w-full resize-none rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+          className="w-full resize-none rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 outline-none focus:border-violet-500 focus:shadow-md"
           {...register("message", { required: true })}
         ></textarea>
       </div>
       <div>
-        <button className="hover:shadow-form rounded-md bg-purple-500 px-8 py-3 text-base font-semibold text-white outline-none">
+        <button className="md:text-md flex grow items-center justify-center gap-2 rounded-md bg-violet-500 p-1.5 text-sm text-white hover:bg-violet-300 hover:text-gray-950 md:p-3 lg:text-lg">
           Submit
         </button>
       </div>
