@@ -1,4 +1,8 @@
-import { DateRangeResource, NameLocationResource } from "@/app/lib/definitions";
+import {
+  DateRangeResource,
+  NameLocationResource,
+  ProjectResource,
+} from "@/app/lib/definitions";
 
 /* -------------- NAME LOCATION RESOURCES -------------- */
 export const ROWAN_UNIVERSITY: NameLocationResource = {
@@ -142,6 +146,53 @@ export const LIBRARIES_LIST = [
   "Tailwind",
   "Bootstrap",
 ];
+
+/* -------------- PROJECT RESOURCES -------------- */
+export const NBA_PREDICTOR: ProjectResource = {
+  name: "NBA Game Outcome Predictor",
+  description:
+    "Predict the results of NBA games based on past team statistics and results.",
+  sourceCodeLink: "https://github.com/toriace25/NBA-Game-Outcome-Predictor",
+  imageSrc: "/static/images/nba-logo_2x.png",
+  imageAlt: "NBA logo",
+};
+
+export const SEINFELD_MBTI_PREDICTOR: ProjectResource = {
+  name: "Seinfeld Myers-Briggs Predictor",
+  description:
+    "Predict the Myers-Briggs personality type of 22 Seinfeld characters.",
+  sourceCodeLink:
+    "https://github.com/toriace25/Seinfeld-Myers-Briggs-Predictor",
+  imageSrc: "/static/images/myers-briggs.webp",
+  imageAlt: "Myers Briggs icon",
+};
+
+export const MORSE_CODE_ROBOT: ProjectResource = {
+  name: "Morse Code Robot",
+  description:
+    "A LEGO robot implementation that can follow a light source and read/translate morse code.",
+  sourceCodeLink: "https://github.com/toriace25/morse-code-robot",
+  imageSrc: "/static/images/morse-code.svg",
+  imageAlt: "Morse code symbol",
+};
+
+export const CARPEDIA: ProjectResource = {
+  name: "Carpedia",
+  description:
+    "A website that allows users to find information on specific vehicles and save them for later use.",
+  sourceCodeLink: "https://github.com/toriace25/Carpedia",
+  imageSrc: "/static/images/car.png",
+  imageAlt: "Cartoon car",
+};
+
+export const FACE_DETECTION: ProjectResource = {
+  name: "Face Detection",
+  description:
+    "A simple webpage that is able to detect faces through webcam input.",
+  sourceCodeLink: "https://github.com/toriace25/Face-Detection",
+  imageSrc: "/static/images/face-detection.png",
+  imageAlt: "Face detection icon",
+};
 
 /* -------------- OTHER -------------- */
 export const MAJOR = "Computer Science";
